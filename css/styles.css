@@ -2542,15 +2542,20 @@ body {
 .masthead .masthead-subheading {
     font-size: 1.5rem;
 }
-}.portfolio .portfolio-item {
+.portfolio .portfolio-item {
     cursor: pointer;
     position: relative;
     display: block;
     max-width: 25rem;
     border-radius: .5rem;
     overflow: hidden;
-	border:#2c3e50;
-	
+	border-color: #2c3e50;
+	border-style: solid;
+	border-width: 4px;
+}
+.portfolio .portfolio-item:hover {
+	#border-style: dashed;
+	border-width: 5px;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
     position: absolute;
@@ -2562,7 +2567,6 @@ body {
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
     opacity: 1;
-	border:2px solid #2c3e50;
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
     font-size: 1.1rem;
